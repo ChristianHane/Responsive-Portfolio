@@ -4,11 +4,10 @@ body {
 }
 
 header {
-    width: 960px;
+    width: 100%;
     background-color: #ffffff;
     border-bottom: 3px #cccccc solid;
-    margin: 0;
-    padding: 0px 240px;
+    padding: 0px;
 }
 
 h1 {
@@ -20,6 +19,7 @@ h1 {
     width: 210px;
     height: 65px;
     padding: 25px 23px 0px 23px;
+    margin-left: 6%;
     
 }
 
@@ -30,6 +30,7 @@ h1 {
     width: 270px;
     float: right;
     margin-top: -50px;
+    margin-right: 8%;
 }
 
 .contact {
@@ -54,10 +55,10 @@ h1 {
     font-size: 20px;
     border: 2px solid #dddddd;
     background-color: white;
-    width: 620px;
-    height: 500px;
-    margin: 50px 0px 0px 238px;
-    padding: 0px 25px;
+    width: 50%;
+    height: auto;
+    margin: 50px 0px 0px 6%;
+    padding: 0px 25px 20px 25px;
     float: left;
 
 }
@@ -86,19 +87,21 @@ h2 {
 .connect-with-me {
     background-color: #ffffff;
     border: 2px solid #dddddd;
-    width: 275px;
+    width: 25%;
+    min-width: 305px;
     height: 200px;
-    float: left;
-    margin: 50px 0px 0px 40px;
+    float: right;
+    margin: 50px 5% 0px 0px;
 }
 
 h3 {
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     color: #4aaaa5;
     border-bottom: 2px solid #D3D3D3;
     padding: 20px 0px 20px 13px;
-    margin: 0px 30px;
+    margin: 0px 10%;
 }
 
 .connect-with-me img {
@@ -108,17 +111,17 @@ h3 {
 
 #github {
     float: left;
-    margin: 20px 5px 20px 25px;
+    margin: 20px 8% 20px 11%;
 }
 
 #linkedin {
     float: left;
-    margin: 20px 5px 20px 5px;
+    margin: 20px 8% 20px 0px;
 }
 
 #stack-overflow {
     float: left;
-    margin: 20px 20px 20px 5px;
+    margin: 20px 0px 20px 0px;
 }
 
 footer {   
@@ -137,27 +140,15 @@ footer p {
 
 .portfolio-container li {
     float: left;
-}
-
-.portfolio-bio img {
-    width: 270px;
-    height: 200px;
+    width: 40%;
+    height: auto;
     margin: 20px;
 }
-.portfolio-bio ul {
-    margin-left: 0px;
-}
 
-.portfolio-bio {
-    font-family: Arial, 'helvetica neue', Helvetica, sans-serif;
-    font-size: 20px;
-    border: 2px solid #dddddd;
-    background-color: white;
-    width: 620px;
-    height: 855px;
-    margin: 50px 0px 0px 238px;
-    padding: 0px 25px;
-    float: left;
+.portfolio-container img {
+    width: 100%;
+    height: auto;
+    margin: 0 20px;
 }
 
 .navbar a {
@@ -165,7 +156,7 @@ footer p {
     color: #777777;
 }
 
-.portfolio-contact {
+/* .portfolio-contact {
     font-family: Arial, 'helvetica neue', Helvetica, sans-serif;
     font-size: 20px;
     border: 2px solid #dddddd;
@@ -175,7 +166,7 @@ footer p {
     margin: 50px 0px 0px 238px;
     padding: 0px 25px;
     float: left;
-}
+} */
 
 #contact-form {
     color: #777777
@@ -211,3 +202,409 @@ footer p {
     cursor: pointer;
     padding: 10px;
 }
+
+@media screen and (max-width: 980px) {
+    body {
+        height: 2200px;
+        position: relative;
+    }
+
+    header {
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 3px #cccccc solid;
+        margin: 0;
+        padding: 0px;
+    }
+
+    h1 {
+        color: white;
+        background-color: #4aaaa5;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 23pt;
+        width: 210px;
+        height: 65px;
+        padding: 25px 23px 0px 23px;
+        margin-left: 6%
+    }
+
+    .navbar {
+        font-family: Arial, 'helvetica neue', Helvetica, sans-serif;
+        font-size: 15pt;
+        color: #4aaaa5;
+        width: 270px;
+        float: right;
+        margin-top: -50px;
+        margin-right: 8%;
+    }
+    
+    .contact {
+        float: right;
+        border-left: 0.5px #D3D3D3 solid;
+        padding-left: 10px;
+    }
+    
+    .portfolio {
+        float: right;
+        border-left: 0.5px #D3D3D3 solid;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .about {
+        float: right;
+        padding-right: 10px;
+    }
+    
+    .bio {
+        font-family: Arial, 'helvetica neue', Helvetica, sans-serif;
+        font-size: 20px;
+        border: 2px solid #dddddd;
+        background-color: white;
+        width: 50%;
+        height: auto;
+        margin: 50px 0px 0px 6%;
+        padding: 0px 25px 20px 25px;
+        float: left;
+    }
+
+    h2 {
+        font-size: 30px;
+        color: #4aaaa5;
+        border-bottom: #D3D3D3 solid 3px;
+        margin: 30px 0px 25px 0px;
+        padding-bottom: 25px;
+    }
+
+    .bio img {
+        width: 100%;
+        height: auto;
+        margin: 8px 10px 20px 0px;
+    }
+    
+    .bio span {
+        line-height: 160%;
+        color: #777777;
+    }
+
+    .connect-with-me {
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+        width: 25%;
+        height: 200px;
+        float: right;
+        margin: 50px 5% 0px 0px;
+    }
+
+    .connect-with-me img {
+        width: 70px;
+        height: 70px;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: #4aaaa5;
+        border-bottom: 2px solid #D3D3D3;
+        padding: 20px 0px 20px 0px;
+        margin: 0px 10%;
+    }
+    
+    #github {
+        float: left;
+        margin: 20px 8% 20px 8.5%;
+    }
+    
+    #linkedin {
+        float: left;
+        margin: 20px 8% 20px 0px;
+    }
+    
+    #stack-overflow {
+        float: left;
+        margin: 20px 0px 20px 0px;
+    }
+    
+    footer {   
+        background-color: #666666;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    footer p {
+        color: white;
+        margin-top: 40px;
+    }
+
+    .portfolio-container li {
+        margin-left: 5%;
+    }
+
+    .portfolio-container li {
+        float: left;
+        width: 80%;
+        height: auto;
+        margin: 20px;
+    }
+    
+    .portfolio-container img {
+        width: 100%;
+        height: auto;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    body {
+        height: 2000px; 
+    }
+
+    .connect-with-me {
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+        width: 30%;
+        min-width: 200px;
+        height: auto;
+        float: right;
+        margin: 50px 5% 0px 0px;
+    }
+
+    .connect-with-me img {
+        width: 50%;
+        height: auto;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: #4aaaa5;
+        border-bottom: 2px solid #D3D3D3;
+        padding: 20px 0px 20px 0px;
+        margin: 0px 10%;
+    }
+    
+    #github {
+        float: none;
+        margin: 20px 0 20px 30%;
+    }
+    
+    #linkedin {
+        float: none;
+        margin: 20px 0 20px 30%;
+    }
+    
+    #stack-overflow {
+        float: none;
+        margin: 20px 0px 20px 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 1400px;
+        position: relative;
+    }
+
+    header {
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 3px #cccccc solid;
+        margin: 0;
+        padding: 0px;
+    }
+
+    h1 {
+        color: white;
+        background-color: #4aaaa5;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 23pt;
+        width: 210px;
+        height: 65px;
+        padding: 25px 23px 0px 23px;
+        margin-left: 6%
+    }
+
+    .navbar {
+        font-family: Arial, 'helvetica neue', Helvetica, sans-serif;
+        font-size: 15pt;
+        color: #4aaaa5;
+        width: 270px;
+        float: right;
+        margin-top: -50px;
+        margin-right: 8%;
+    }
+    
+    .contact {
+        float: right;
+        border-left: 0.5px #D3D3D3 solid;
+        padding-left: 10px;
+    }
+    
+    .portfolio {
+        float: right;
+        border-left: 0.5px #D3D3D3 solid;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .about {
+        float: right;
+        padding-right: 10px;
+    }
+    
+    .bio {
+        font-family: Arial, 'helvetica neue', Helvetica, sans-serif;
+        font-size: 20px;
+        border: 2px solid #dddddd;
+        background-color: white;
+        width: 80%;
+        height: auto;
+        margin: 50px 0px 0px 6%;
+        padding: 0px 25px 20px 25px;
+        float: left;
+    }
+
+    h2 {
+        font-size: 30px;
+        color: #4aaaa5;
+        border-bottom: #D3D3D3 solid 3px;
+        margin: 30px 0px 25px 0px;
+        padding-bottom: 25px;
+    }
+
+    .bio img {
+        width: 50%;
+        height: auto;
+        margin: 8px 10px 0px 0px;
+    }
+    
+    .bio span {
+        line-height: 160%;
+        color: #777777;
+    }
+
+    .connect-with-me {
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+        width: 80%;
+        height: 200px;
+        float: left;
+        margin: 50px 0 0px 6%;
+        padding: 0 25px;
+    }
+
+    .connect-with-me img {
+        width: 70px;
+        height: 70px;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: #4aaaa5;
+        border-bottom: 2px solid #D3D3D3;
+        padding: 20px 0px 20px 0px;
+        margin: 0px 10%;
+    }
+    
+    #github {
+        float: left;
+        margin: 20px 8% 20px 20%;
+    }
+    
+    #linkedin {
+        float: left;
+        margin: 20px 8% 20px 0px;
+    }
+    
+    #stack-overflow {
+        float: left;
+        margin: 20px 0px 20px 0px;
+    }
+    
+    footer {   
+        background-color: #666666;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    footer p {
+        color: white;
+        margin-top: 40px;
+    }
+
+    .portfolio-container li {
+        float: left;
+        width: 45%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    .portfolio-container img {
+        width: 100%;
+        height: auto;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 3px #cccccc solid;
+        margin: 0;
+        padding: 0px;
+    }
+
+    h1 {
+        color: white;
+        background-color: #4aaaa5;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 23pt;
+        width: 100%;
+        height: 65px;
+        padding: 25px 0px 0px 0px;
+        margin-left: 0;
+    }
+
+    .navbar {
+        font-family: Arial, 'helvetica neue', Helvetica, sans-serif;
+        font-size: 15pt;
+        color: #4aaaa5;
+        background-color: white;
+        width: 100%;
+        height: 35px;
+        float: none;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .contact {
+        float: right;
+        border-left: 0.5px #D3D3D3 solid;
+        padding-left: 60px;
+        margin-right: 16%
+    }
+    
+    .portfolio {
+        float: right;
+        border-left: 0.5px #D3D3D3 solid;
+        padding: 0px 60px 0px 60px;
+    }
+    
+    .about {
+        float: right;
+        padding-right: 60px;
+    }
+}
+
